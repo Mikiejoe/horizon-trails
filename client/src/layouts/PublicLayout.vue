@@ -68,8 +68,10 @@
 
       <!-- Mobile Navigation Drawer -->
       <div v-if="isMobileMenuOpen" class="md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-4 space-y-2">
-        <RouterLink to="/" class="block py-2 text-base font-medium text-slate-700" @click="isMobileMenuOpen = false">Tours</RouterLink>
+        <RouterLink to="/tours" class="block py-2 text-base font-medium text-slate-700" @click="isMobileMenuOpen = false">Tours</RouterLink>
         <RouterLink to="/destinations" class="block py-2 text-base font-medium text-slate-700" @click="isMobileMenuOpen = false">Destinations</RouterLink>
+        <RouterLink to="/about" class="block py-2 text-base font-medium text-slate-700" @click="isMobileMenuOpen = false">About Us</RouterLink>
+        <RouterLink to="/contact" class="block py-2 text-base font-medium text-slate-700" @click="isMobileMenuOpen = false">Contact</RouterLink>
         <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
           <template v-if="authStore.isAuthenticated">
             <button @click="authStore.logout(); isMobileMenuOpen = false" class="w-full text-left py-2 text-rose-600 font-semibold">Log Out</button>
