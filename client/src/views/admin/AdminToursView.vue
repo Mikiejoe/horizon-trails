@@ -297,7 +297,7 @@
           <div class="flex gap-2">
             <button
               class="px-3 py-1 border border-outline-variant/50 rounded text-on-surface-variant hover:bg-surface-variant transition-colors disabled:opacity-50"
-              disabled=""
+              disabled
             >
               Prev
             </button>
@@ -313,7 +313,7 @@
 </template>
 
 <script setup lang="ts">
-import { LucideCopy, LucideFilter, LucideMap, LucideMapPin, LucidePencil, LucideSearch, LucideTrash } from 'lucide-vue-next';
+import { LucideCopy, LucideFilter,  LucideMapPin, LucidePencil, LucideSearch, LucideTrash } from 'lucide-vue-next';
 
 
 </script>

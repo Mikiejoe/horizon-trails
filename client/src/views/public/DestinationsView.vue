@@ -44,7 +44,7 @@
                 class="bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-md text-label-md px-4 py-2 rounded-full flex items-center gap-2"
               >
                 
-                <LucideFlag size="14"/>
+                <LucideFlag :size="14"/>
                 24 Tours
               </span>
             </div>
@@ -85,7 +85,7 @@
                 class="bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-md text-label-md px-3 py-1.5 rounded-full flex items-center gap-1"
               >
                 
-                <LucideSnowflake size="14"/>
+                <LucideSnowflake :size="14"/>
                 12 Tours
               </span>
             </div>
@@ -125,7 +125,7 @@
                 class="bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-md text-label-md px-3 py-1.5 rounded-full flex items-center gap-1"
               >
                 
-                <LucideMountain size="14"/>
+                <LucideMountain :size="14"/>
                 18 Tours
               </span>
             </div>
@@ -165,7 +165,7 @@
                 class="bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-md text-label-md px-3 py-1.5 rounded-full flex items-center gap-1"
               >
                 
-                <LucideTrees size="14"/>
+                <LucideTrees :size="14"/>
                 9 Tours
               </span>
             </div>
@@ -204,7 +204,7 @@
               <span
                 class="bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-md text-label-md px-4 py-2 rounded-full flex items-center gap-2"
               >
-                                <LucideMountainSnow size="14"/>
+                                <LucideMountainSnow :size="14"/>
                 15 Tours
               </span>
             </div>

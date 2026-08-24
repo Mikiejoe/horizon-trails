@@ -33,12 +33,12 @@
       >
         <span class="flex items-center gap-1 justify-center">
           
-          <LucideClock size="14"/>
+          <LucideClock :size="14"/>
           5 Days</span
         >
         <span class="flex items-center justify-center gap-1"
           >
-          <LucideStar  size="14"/>
+          <LucideStar  :size="14"/>
           4.9</span
         >
       </div>

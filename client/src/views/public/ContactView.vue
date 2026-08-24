@@ -24,7 +24,7 @@
         >
           <div class="flex items-start gap-stack-md mb-stack-lg">
             
-            <LucideMapPin size="30" color="brown"/>
+            <LucideMapPin :size="30" color="brown"/>
             <div>
               <h3
                 class="font-headline-md text-headline-md text-on-surface mb-unit"
@@ -40,7 +40,7 @@
           </div>
           <div class="w-full h-px bg-outline-variant/20 mb-stack-lg"></div>
           <div class="flex items-start gap-stack-md mb-stack-lg">
-            <LucidePhone size="30" color="brown"/>
+            <LucidePhone :size="30" color="brown"/>
             <div>
               <h3
                 class="font-headline-md text-headline-md text-on-surface mb-unit"
@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="flex items-start gap-stack-md">
-            <LucideSnowflake size="30" color="brown"/>
+            <LucideSnowflake :size="30" color="brown"/>
             <div>
               <h3
                 class="font-headline-md text-headline-md text-on-surface mb-unit"
@@ -148,7 +148,7 @@
                 id="name"
                 name="name"
                 placeholder="Jane Doe"
-                required=""
+                required
                 type="text"
               />
             </div>
@@ -164,7 +164,7 @@
                 id="email"
                 name="email"
                 placeholder="jane@example.com"
-                required=""
+                required
                 type="email"
               />
             </div>
@@ -200,7 +200,7 @@
               id="message"
               name="message"
               placeholder="How can we help you plan your journey?"
-              required=""
+              required
               rows="5"
             ></textarea>
           </div>
@@ -217,7 +217,7 @@
             >
               Send Message
               <LucideArrowRight
-              size="20"
+              :size="20"
                 class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1"
                 
                 />

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { MapPin, Calendar, Search } from "lucide-vue-next";
 import TourCard from "../../components/TourCard.vue";

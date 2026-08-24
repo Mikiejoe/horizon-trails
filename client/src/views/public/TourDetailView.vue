@@ -8,10 +8,10 @@
         class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mb-stack-md"
       >
         <a class="hover:text-primary transition-colors" href="#">Home</a>
-        <LucideChevronRight size="16" />
+        <LucideChevronRight :size="16" />
         <a class="hover:text-primary transition-colors" href="#">Tours</a>
 
-        <LucideChevronRight size="16" />
+        <LucideChevronRight :size="16" />
         <span class="text-on-surface">Tanzania</span>
       </nav>
       <div
@@ -24,7 +24,7 @@
           <div
             class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md"
           >
-            <LucideLocate size="20"/>
+            <LucideLocate :size="20"/>
             <span>Tanzania, East Africa</span>
           </div>
         </div>
@@ -32,13 +32,13 @@
           <button
             class="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors font-label-md text-label-md"
           >
-            <LucideShare size="18"/>
+            <LucideShare :size="18"/>
             Share
           </button>
           <button
             class="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors font-label-md text-label-md"
           >
-                        <LucideHeart size="18"/>
+                        <LucideHeart :size="18"/>
             Save
           </button>
         </div>
@@ -91,7 +91,7 @@
           class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-sm px-4 py-2 rounded-full font-label-md text-label-md text-on-surface flex items-center gap-2"
         >
           
-          <LucideGalleryVertical size="18"/>
+          <LucideGalleryVertical :size="18"/>
           View all photos
         </div>
       </div>
@@ -133,19 +133,19 @@
                 class="space-y-3 font-body-md text-body-md text-on-surface-variant"
               >
                 <li class="flex items-start gap-3">
-                  <LucideCheck size="20" color="gray"/>6 nights in eco-luxury camps
+                  <LucideCheck :size="20" color="gray"/>6 nights in eco-luxury camps
                 </li>
                 <li class="flex items-start gap-3">
-                  <LucideCheck size="20" color="gray"/>All meals (Breakfast, Lunch, Dinner)
+                  <LucideCheck :size="20" color="gray"/>All meals (Breakfast, Lunch, Dinner)
                 </li>
                 <li class="flex items-start gap-3">
-                  <LucideCheck size="20" color="gray"/>Expert local naturalist guides
+                  <LucideCheck :size="20" color="gray"/>Expert local naturalist guides
                 </li>
                 <li class="flex items-start gap-3">
-                  <LucideCheck size="20" color="gray"/>4x4 safari vehicle transport
+                  <LucideCheck :size="20" color="gray"/>4x4 safari vehicle transport
                 </li>
                 <li class="flex items-start gap-3">
-                  <LucideCheck size="20" color="gray"/>National park fees &amp; conservation levies
+                  <LucideCheck :size="20" color="gray"/>National park fees &amp; conservation levies
                 </li>
               </ul>
             </div>
@@ -162,16 +162,16 @@
                 class="space-y-3 font-body-md text-body-md text-on-surface-variant opacity-80"
               >
                 <li class="flex items-start gap-3">
-                  <LucideX color="red" size="20"/>International flights
+                  <LucideX color="red" :size="20"/>International flights
                 </li>
                 <li class="flex items-start gap-3">
-                  <LucideX color="red" size="20"/>Travel insurance (required)
+                  <LucideX color="red" :size="20"/>Travel insurance (required)
                 </li>
                 <li class="flex items-start gap-3">
-                  <LucideX color="red" size="20"/>Optional hot air balloon safari
+                  <LucideX color="red" :size="20"/>Optional hot air balloon safari
                 </li>
                 <li class="flex items-start gap-3">
-                  <LucideX color="red" size="20"/>Personal expenses &amp; tips
+                  <LucideX color="red" :size="20"/>Personal expenses &amp; tips
                 </li>
               </ul>
             </div>
@@ -308,11 +308,11 @@
                 class="flex items-center border border-outline-variant rounded-lg bg-surface px-3 py-3 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all"
               >
                 
-                <LucideCalendarDays color="gray" size="20"/>
+                <LucideCalendarDays color="gray" :size="20"/>
                 <input
                   class="ml-2 w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface font-body-md text-body-md placeholder-outline cursor-pointer"
                   placeholder="Jul 12 - Jul 18, 2024"
-                  readonly=""
+                  readonly
                   type="date"
                 />
               </div>
@@ -334,7 +334,7 @@
                     class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-colors"
                     type="button"
                   >
-                    <LucideMinus size="18"/>
+                    <LucideMinus :size="18"/>
                   </button>
                   <span
                     class="font-headline-md text-headline-md w-4 text-center"
@@ -344,7 +344,7 @@
                     class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-colors"
                     type="button"
                   >
-                    <LucidePlus size="18"/>
+                    <LucidePlus :size="18"/>
                   </button>
                 </div>
               </div>
@@ -392,6 +392,6 @@
 </template>
 
 <script setup lang="ts">
-import { LucideArrowRight, LucideCalendarDays, LucideCheck, LucideCheckCircle, LucideChevronDown, LucideChevronRight, LucideCircleX, LucideGalleryThumbnails, LucideGalleryVertical, LucideHeart, LucideLocate, LucideMinus, LucidePlus, LucideShare, LucideX } from 'lucide-vue-next';
+import { LucideArrowRight, LucideCalendarDays, LucideCheck, LucideCheckCircle, LucideChevronDown, LucideChevronRight, LucideCircleX,  LucideGalleryVertical, LucideHeart, LucideLocate, LucideMinus, LucidePlus, LucideShare, LucideX } from 'lucide-vue-next';
 
 </script>
