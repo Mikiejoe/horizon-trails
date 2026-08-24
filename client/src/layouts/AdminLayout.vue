@@ -105,7 +105,7 @@
 
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
-import { useAuthStore } from '../stores/authStore';
+// import { useAuthStore } from '../stores/authStore';
 import { LucideBanknote, LucideCalendarCheck, LucideCirclePlus, LucideCircleQuestionMark, LucideCompass, LucideGrid, LucideMountain, LucideSettings } from 'lucide-vue-next';
 
 // const authStore = useAuthStore();
