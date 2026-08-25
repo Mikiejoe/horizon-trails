@@ -189,7 +189,7 @@
 </template>
 
 <script setup lang="ts">
-import { LucideCheckCircle, LucideCreditCard, LucideDownload, LucidePhone, LucideSmartphone, LucideUniversity } from 'lucide-vue-next';
+import { LucideCheckCircle, LucideCreditCard, LucideDownload, LucideSmartphone, LucideUniversity } from 'lucide-vue-next';
 
 
 </script>
