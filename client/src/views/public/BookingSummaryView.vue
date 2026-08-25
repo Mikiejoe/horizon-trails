@@ -1,3 +1,22 @@
+<script setup lang="ts">
+import { computed } from "vue";
+import { RouterLink, useRoute } from "vue-router";
+import {
+  LucideArrowLeft,
+  LucideArrowRight,
+  LucideCalendar,
+  LucideCheck,
+  LucideInfo,
+  LucideLock,
+  LucideMapPin,
+  LucideReceiptText,
+  LucideTrees,
+} from "lucide-vue-next";
+
+const route = useRoute();
+const tourSlug = computed(() => route.params.slug || "serengeti");
+</script>
+
 <template>
   <main
     class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap"
@@ -9,17 +28,19 @@
         <div
           class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-px bg-outline-variant/30 -z-10"
         ></div>
+
         <!-- Step 1: Details (Completed) -->
         <div class="flex flex-col items-center gap-stack-sm bg-background px-4">
           <div
             class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-label-md"
           >
-            <LucideCheck class="material-symbols-outlined text-[16px]" />
+            <LucideCheck :size="16" />
           </div>
-          <span class="font-label-md text-label-md text-on-surface-variant"
-            >Details</span
-          >
+          <span class="font-label-md text-label-md text-on-surface-variant">
+            Details
+          </span>
         </div>
+
         <!-- Step 2: Summary (Active) -->
         <div class="flex flex-col items-center gap-stack-sm bg-background px-4">
           <div
@@ -29,6 +50,7 @@
           </div>
           <span class="font-label-md text-label-md text-primary">Summary</span>
         </div>
+
         <!-- Step 3: Payment (Pending) -->
         <div class="flex flex-col items-center gap-stack-sm bg-background px-4">
           <div
@@ -40,23 +62,25 @@
         </div>
       </div>
     </div>
+
     <div class="max-w-4xl mx-auto">
       <h1
         class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-stack-lg text-center"
       >
         Review your journey
       </h1>
+
       <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <!-- Main Order Summary (Bento Grid Style) -->
         <div class="md:col-span-8 flex flex-col gap-gutter">
           <!-- Hero Image & Tour Info -->
           <div
-            class="stone-card rounded-xl overflow-hidden flex flex-col sm:flex-row"
+            class="stone-card rounded-xl overflow-hidden flex flex-col sm:flex-row border border-outline-variant/15 bg-surface-container-lowest"
           >
             <div class="w-full sm:w-2/5 h-48 sm:h-auto relative">
               <img
                 class="absolute inset-0 w-full h-full object-cover"
-                data-alt="A breathtaking golden hour view of the Serengeti plains during the Great Migration. Thousands of wildebeest are scattered across the vast savanna. The lighting is warm and cinematic, emphasizing the tactile minimalist aesthetic of a premium travel brand. Soft terracotta and deep acacia green tones dominate the landscape."
+                alt="Golden hour view of the Serengeti plains during the Great Migration with wildebeest herds"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU8VTYgV0ZhD7U5eBMGfFH0R18L_yprlvMuYnqig2uBSZKtAdIkY1w1M6MN63qUmRH-sL9owWSPz9ghApO3zULwpQ3ztK6QqmcJvoay4mfAjL-AyksfC_EncoPiIKXAKpcjfG70Ch3oHLGBop3Kd3yuVZ86NQ82g9kV1rQMAVDabhL8TPJVgtP5AulIKzFO7hP46iZ42xj9VxhB9oEg-vIhEcZTaiRg9HrDK5hjf2oGane6b7m3Bn9"
               />
             </div>
@@ -65,7 +89,7 @@
                 <span
                   class="bg-surface-container-high text-primary px-3 py-1 rounded-full font-label-md text-label-md inline-flex items-center gap-1"
                 >
-                  <LucideTrees class="material-symbols-outlined text-[14px]" />
+                  <LucideTrees :size="14" />
                   Eco-Certified
                 </span>
               </div>
@@ -77,17 +101,20 @@
               <p
                 class="font-body-sm text-body-sm text-on-surface-variant mb-4 flex items-center gap-1"
               >
-                <LucideMapPin class="material-symbols-outlined text-[16px]" />
+                <LucideMapPin :size="16" />
                 Tanzania, East Africa
               </p>
             </div>
           </div>
+
           <!-- Itinerary Details -->
-          <div class="stone-card rounded-xl p-gutter">
+          <div
+            class="stone-card rounded-xl p-gutter border border-outline-variant/15 bg-surface-container-lowest"
+          >
             <h3
               class="font-headline-sm text-headline-sm text-on-surface mb-stack-md flex items-center gap-2"
             >
-              <LucideCalendar class="material-symbols-outlined text-primary" />
+              <LucideCalendar class="text-primary" :size="20" />
               Trip Details
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-lg">
@@ -100,7 +127,7 @@
                 <p
                   class="font-body-md text-body-md text-on-surface font-semibold"
                 >
-                  Oct 12 - Oct 19, 2024
+                  Oct 12 - Oct 19, 2026
                 </p>
                 <p class="font-body-sm text-body-sm text-outline mt-1">
                   8 Days, 7 Nights
@@ -124,15 +151,16 @@
             </div>
           </div>
         </div>
+
         <!-- Price Breakdown Sidebar -->
         <div class="md:col-span-4">
-          <div class="stone-card rounded-xl p-gutter sticky top-28">
+          <div
+            class="stone-card rounded-xl p-gutter border border-outline-variant/15 bg-surface-container-lowest sticky top-28"
+          >
             <h3
               class="font-headline-sm text-headline-sm text-on-surface mb-stack-md flex items-center gap-2"
             >
-              <LucideReceiptText
-                class="material-symbols-outlined text-primary"
-              />
+              <LucideReceiptText class="text-primary" :size="20" />
               Price Breakdown
             </h3>
             <div
@@ -147,13 +175,9 @@
               <div
                 class="flex justify-between items-center text-on-surface-variant"
               >
-                <span
-                  class="flex items-center gap-1 cursor-help group relative"
-                >
+                <span class="flex items-center gap-1 cursor-help group relative">
                   Eco-conservation fee
-                  <span class="material-symbols-outlined text-[14px]"
-                    >info</span
-                  >
+                  <LucideInfo :size="14" />
                 </span>
                 <span>$300.00</span>
               </div>
@@ -164,45 +188,44 @@
                 <span>$420.00</span>
               </div>
             </div>
+
             <!-- Divider -->
             <div class="h-px w-full bg-outline-variant/30 mb-stack-md"></div>
+
             <div class="flex justify-between items-end mb-stack-lg">
               <span
                 class="font-body-md text-body-md text-on-surface font-semibold"
-                >Total</span
               >
+                Total
+              </span>
               <span
                 class="font-headline-md text-headline-md text-primary font-bold"
-                >$9,120.00</span
               >
+                $9,120.00
+              </span>
             </div>
+
             <div class="flex flex-col gap-stack-sm">
               <RouterLink
-                to="/tours/serengeti/checkout/summary/payment"
-                class="w-full bg-primary text-on-primary py-[12px] px-gutter rounded-lg font-label-md text-label-md hover:bg-surface-tint transition-colors shadow-sm flex items-center justify-center gap-2"
+                :to="`/tours/${tourSlug}/checkout/payment`"
+                class="w-full bg-primary text-on-primary py-[12px] px-gutter rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity shadow-sm flex items-center justify-center gap-2"
               >
                 Proceed to Payment
-                <LucideArrowRight
-                  class="material-symbols-outlined text-[18px]"
-                />
+                <LucideArrowRight :size="18" />
               </RouterLink>
               <RouterLink
-                to="tours/serengeti/checkout/summary"
+                :to="`/tours/${tourSlug}/checkout`"
                 class="w-full border-2 border-outline-variant text-on-surface-variant py-[10px] px-gutter rounded-lg font-label-md text-label-md hover:bg-surface-container-high hover:border-on-surface-variant transition-colors flex items-center justify-center gap-2"
               >
-                <LucideArrowLeft
-                  class="material-symbols-outlined text-[18px]"
-                />
+                <LucideArrowLeft :size="18" />
                 Back to Details
               </RouterLink>
             </div>
+
             <p
               class="font-body-sm text-[12px] text-outline text-center mt-stack-md flex items-center justify-center gap-1"
             >
-              <LucideLock
-                class="material-symbols-outlined text-[14px]"
-                :size="14"
-              />
+              <LucideLock :size="14" />
               Secure checkout encrypted via SSL
             </p>
           </div>
@@ -211,19 +234,3 @@
     </div>
   </main>
 </template>
-
-<script setup lang="ts">
-import {
-  LucideArrowLeft,
-  LucideArrowRight,
-  LucideCalendar,
-  LucideCheck,
-  LucideLock,
-  LucideMapPin,
-  LucideReceiptText,
-  LucideTrees,
-} from "lucide-vue-next";
-import { RouterLink } from "vue-router";
-</script>
-
-<style scoped></style>
