@@ -33,28 +33,28 @@
         </RouterLink>
         <!-- Inactive Tabs -->
         <RouterLink
-          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-high transition-colors duration-200"
+          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant  rounded-lg hover:bg-surface-container-high transition-colors duration-200"
           to="/admin/tours"
         >
           <LucideCompass class="h-5 w-5" />
           <span class="font-label-md text-label-md">Tours</span>
         </RouterLink>
         <RouterLink
-          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-high transition-colors duration-200"
+          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant rounded-lg hover:bg-surface-container-high transition-colors duration-200"
           to="/admin/destinations"
         >
           <LucideMountain class="h-5 w-5" />
           <span class="font-label-md text-label-md">Destinations</span>
         </RouterLink>
         <RouterLink
-          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-high transition-colors duration-200"
+          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant  rounded-lg hover:bg-surface-container-high transition-colors duration-200"
           to="/admin/bookings"
         >
           <LucideCalendarCheck class="h-5 w-5" />
           <span class="font-label-md text-label-md">Bookings</span>
         </RouterLink>
         <RouterLink
-          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-high transition-colors duration-200"
+          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant  rounded-lg hover:bg-surface-container-high transition-colors duration-200"
           to="/admin/financials"
         >
           <LucideBanknote class="h-5 w-5" />
@@ -63,26 +63,26 @@
       </div>
       <!-- CTA -->
       <div class="mt-stack-lg">
-        <button
-          class="w-full bg-primary text-on-primary py-[12px] px-[24px] rounded-lg font-bold font-label-md text-label-md flex justify-center items-center gap-unit hover:opacity-90 transition-opacity shadow-sm"
+        <RouterLink to="/admin/tours/create"
+          class="w-full bg-primary text-on-primary py-3 px-[24px] rounded-lg font-bold font-label-md text-label-md flex justify-center items-center gap-unit hover:opacity-90 transition-opacity shadow-sm"
         >
           <LucideCirclePlus class="h-5 w-5" />
           New Tour
-        </button>
+        </RouterLink>
       </div>
       <!-- Footer Tabs -->
       <div
         class="mt-auto flex flex-col gap-unit pt-stack-md border-t border-outline-variant/10"
       >
         <RouterLink
-          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-high transition-colors duration-200"
+          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant  rounded-lg hover:bg-surface-container-high transition-colors duration-200"
           to="/admin/settings"
         >
           <LucideSettings class="h-5 w-5" />
           <span class="font-label-md text-label-md">Settings</span>
         </RouterLink>
         <RouterLink
-          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-high transition-colors duration-200"
+          class="flex items-center gap-stack-sm p-stack-sm text-on-surface-variant  rounded-lg hover:bg-surface-container-high transition-colors duration-200"
           to="/admin/help"
         >
           <LucideCircleQuestionMark class="h-5 w-5" />
@@ -92,11 +92,11 @@
     </nav>
 
     <!-- Main Admin Content Area -->
-    <div class="flex-grow flex flex-col min-w-0">
+    <div class="grow flex flex-col min-w-0">
       
 
       <!-- Admin Router View Container -->
-      <main class="flex-grow p-8 overflow-y-auto">
+      <main class="grow p-8 overflow-y-auto">
         <RouterView />
       </main>
     </div>

@@ -183,7 +183,7 @@
           :style="{ backgroundImage: `url(${selectedBooking.coverImage})` }"
         >
           <div
-            class="from-surface-bright absolute inset-0 bg-gradient-to-t to-transparent"
+            class="from-surface-bright absolute inset-0 bg-linear-to-t to-transparent"
           ></div>
           <button
             type="button"
@@ -278,7 +278,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="bg-outline-variant/10 h-[1px] w-full"></div>
+                <div class="bg-outline-variant/10 h-px w-full"></div>
                 <div class="flex gap-3">
                   <LucideHeart class="h-4 w-4 text-primary" />
                   <div>

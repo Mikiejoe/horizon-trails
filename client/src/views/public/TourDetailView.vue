@@ -372,13 +372,13 @@
                 <span>$2,748</span>
               </div>
             </div>
-            <button
+            <RouterLink to="/tours/serengeti/checkout" 
               class="w-full bg-primary text-on-primary font-headline-md text-[18px] py-4 rounded-xl hover:opacity-90 transition-all duration-300 shadow-md mt-stack-sm flex items-center justify-center gap-2"
-              type="button"
+              
             >
               Book Expedition
               <LucideArrowRight/>
-            </button>
+            </RouterLink >
             <p
               class="text-center font-body-sm text-body-sm text-on-surface-variant mt-2"
             >
@@ -393,5 +393,6 @@
 
 <script setup lang="ts">
 import { LucideArrowRight, LucideCalendarDays, LucideCheck, LucideCheckCircle, LucideChevronDown, LucideChevronRight, LucideCircleX,  LucideGalleryVertical, LucideHeart, LucideLocate, LucideMinus, LucidePlus, LucideShare, LucideX } from 'lucide-vue-next';
+import { RouterLink } from 'vue-router';
 
 </script>

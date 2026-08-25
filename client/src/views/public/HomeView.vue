@@ -27,7 +27,7 @@ const handleSearch = () => {
       <div class="absolute inset-0 z-0">
         <div
           class="bg-cover bg-center w-full h-full"
-          style="background-image: url(&quot;/public/images/bannerbg.jpg&quot;)"
+          style="background-image: url('/images/bannerbg.jpg')"
         ></div>
         <div class="absolute inset-0 hero-overlay"></div>
       </div>

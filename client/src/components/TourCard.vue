@@ -39,13 +39,13 @@
                 <span class="font-headline-md text-headline-md text-on-surface"
                   >$2,450</span
                 >
-                <button
+                <RouterLink to="/tours/serengeti"
                   class="text-primary font-label-md text-label-md hover:underline flex items-center"
                 >
                   Details
                 
                     <LucideArrowRight class="material-symbols-outlined ml-1 text-[18px]"/>
-                </button>
+                </RouterLink>
               </div>
             </div>
           </div>
@@ -53,6 +53,7 @@
 
 <script setup lang="ts">
 import { LucideArrowRight, LucideStar } from 'lucide-vue-next';
+import { RouterLink } from 'vue-router';
 
 
 </script>
